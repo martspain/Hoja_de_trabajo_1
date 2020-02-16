@@ -3,7 +3,7 @@ Radio interface
 Interface que tiene los métodos generales de una radio
 Autores: 
 Martín España	Carné: 19258
-Hansel López	Carné: 19
+Hansel López	Carné: 19026
 Algoritmos y Estructuras de datos
 Hoja de trabajo 1
 Ultima modificación: 16/02/2020
