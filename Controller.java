@@ -14,10 +14,11 @@ import java.util.Scanner;
 
 public class Controller{
 	
+	Scanner input = new Scanner(System.in);
+	CarRadio proto = new CarRadio();
+	
 	public void runProgram(){
 		boolean active = true;
-		Scanner input = new Scanner(System.in);
-		CarRadio proto = new CarRadio();
 		
 		//Ciclo while del menu principal
 		while(active){
