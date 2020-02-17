@@ -14,7 +14,11 @@ import java.util.Scanner;
 public class Controller{
 	
 	Scanner input = new Scanner(System.in);
-	CarRadio proto = new CarRadio();
+	
+	//Aqui se instancian las clases creadas por otros grupos para probar su funcionalidad. Capturas de pantalla en carpetas respectivas.
+	//CarRadio proto = new CarRadio();
+	//implementacionRadio proto = new implementacionRadio();
+	//Radio1 proto = new Radio1();
 	
 	/**
 	 * Metodo que corre el programa e inicia el ciclo principal
