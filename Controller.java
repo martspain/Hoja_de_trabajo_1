@@ -33,7 +33,14 @@ public class Controller{
 				
 				//Mientras la radio este encendida mostrara las opciones para manipularla (menu de la radio)
 				while(proto.getEstado()){
-					System.out.println("\n/////////////////////////////////// \nEstacion actual: "+proto.getEstacion()+"\nFrecuencia actual: "+proto.getTipoFrecuencia()+"\n///////////////////////////////////");
+					String freqq = "";
+					if(proto.getTipoFrecuencia()){
+						freqq = "AM";
+					}
+					else{
+						freqq = "FM";
+					}
+					System.out.println("\n/////////////////////////////////// \nEstacion actual: "+proto.getEstacion()+"\nFrecuencia actual: "+freqq+"\n///////////////////////////////////");
 					System.out.println("Que desea hacer? \n1. Cambiar de estacion \n2. Cambiar de frecuencia \n3. Guardar emisora actual en un boton \n4. Seleccionar un boton \n5. Apagar el radio");
 					String secondChoice = input.next();
 					boolean dial = true;
@@ -50,7 +57,7 @@ public class Controller{
 									case "1":
 										while(dialing){
 											proto.cambioTipoFrecuencia(true);
-											System.out.println("\n/////////////////////////////////// \nEstacion actual: "+proto.getEstacion()+"\nFrecuencia actual: "+proto.getTipoFrecuencia()+"\n///////////////////////////////////");
+											System.out.println("\n/////////////////////////////////// \nEstacion actual: "+proto.getEstacion()+"\nFrecuencia actual: AM"+"\n///////////////////////////////////");
 											System.out.println("1. Subir de estacion \n2. Bajar de estacion \n3. Regresar");
 											String upDown = input.next();
 											if(upDown.equals("1")){
@@ -71,7 +78,7 @@ public class Controller{
 									case "2":
 										while(dialing){
 											proto.cambioTipoFrecuencia(false);
-											System.out.println("\n/////////////////////////////////// \nEstacion actual: "+proto.getEstacion()+"\nFrecuencia actual: "+proto.getTipoFrecuencia()+"\n///////////////////////////////////");
+											System.out.println("\n/////////////////////////////////// \nEstacion actual: "+proto.getEstacion()+"\nFrecuencia actual: FM"+"\n///////////////////////////////////");
 											System.out.println("1. Subir de estacion \n2. Bajar de estacion \n3. Regresar");
 											String upDown = input.next();
 											if(upDown.equals("1")){
@@ -122,8 +129,8 @@ public class Controller{
 							System.out.println("Que botones desea acceder? \n1. Frecuencia AM \n2. Frecuencia FM");
 							try{
 								String buttonFreq = input.next();
-								double var;
-								String fri;
+								String fri = "";
+								double var = 0;
 								
 								if(buttonFreq.equals("1")){
 									System.out.println("Seleccione un boton (Elija un numero entre el 1 y el 12)");

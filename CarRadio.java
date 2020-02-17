@@ -1,16 +1,15 @@
-/*
-Radio interface
-Implementación para la interfaz radio
-Autores: 
-Martín España	Carné: 19258
-Hansel López	Carné: 19026
-Algoritmos y Estructuras de datos
-Hoja de trabajo 1
-Ultima modificación: 16/02/2020
-Versión 1.0
+/**
+ * CarRadio Class
+ * Implementación para la interfaz radio 
+ * @author Martín España	Carné: 19258
+ * @author Hansel López	Carné: 19026
+ * Algoritmos y Estructuras de datos
+ * Hoja de trabajo 1
+ * Ultima modificación: 16/02/2020
+ * Versión 1.0
 */
 
-class CarRadio implements Radio{
+public class CarRadio implements Radio{
     private boolean status;
     private double currentStation;
     double[] estacionesAM = {530,540,550,560,570,580,590,1000,1010,1020,1030,1040};
