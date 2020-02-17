@@ -1,13 +1,12 @@
-/*
-Controller class
-Clase que maneja el menú y conecta el modelo con la vista (en este caso la clase controller actuara como la vista tambien)
-Autores: 
-Martín España	Carné: 19258
-Hansel López	Carné: 19026
-Algoritmos y Estructuras de datos
-Hoja de trabajo 1
-Ultima modificación: 16/02/2020
-Versión 1.0
+/**
+ * Controller class
+ * Clase que maneja el menú y conecta el modelo con la vista (en este caso la clase controller actuara como la vista tambien) 
+ * @author Martín España	Carné: 19258
+ * @author Hansel López	Carné: 19026
+ * Algoritmos y Estructuras de datos
+ * Hoja de trabajo 1
+ * Ultima modificación: 16/02/2020
+ * Versión 1.0
 */
 
 import java.util.Scanner;
@@ -17,6 +16,9 @@ public class Controller{
 	Scanner input = new Scanner(System.in);
 	CarRadio proto = new CarRadio();
 	
+	/**
+	 * Metodo que corre el programa e inicia el ciclo principal
+	*/
 	public void runProgram(){
 		boolean active = true;
 		
