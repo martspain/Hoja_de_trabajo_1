@@ -102,10 +102,10 @@ public class Controller{
 						case "3":
 							System.out.println("\nEn que boton desea agregar esta emisora? (Elija un numero entre el 1 y el 12)");
 							try{
-								String decision = input.nextInt();
+								int decision = input.nextInt();
 								
 								if(decision >= 1 && decision <= 12){
-									proto.guardarEstacion(proto.getEstacion(), getTipoFrecuencia(), decision);
+									proto.guardarEstacion(proto.getEstacion(), proto.getTipoFrecuencia(), decision);
 								}
 								else{
 									System.out.println("\nIngrese un numero dentro del rango establecido...");
@@ -137,7 +137,7 @@ public class Controller{
 								System.out.println("La estacion seleccionada es la "+var+" de la frecuencia "+fri);
 							}
 							catch(Exception e){
-								System.out.println("\Error: Ingrese un numero porfavor...");
+								System.out.println("\nError: Ingrese un numero porfavor...");
 							}
 						break;
 						case "5":
